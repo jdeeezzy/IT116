@@ -113,7 +113,27 @@
         <button>Submit</button>
     </form>
 </section>
+
+<hr>
 <!-- the submit button will take all info this specific form and push them thru -->
+
+<!-- the below section is for validations -->
+<section>
+    <form action="/watermelon"></form>
+        <label for="Justin">Textbox</label>
+        <input type="text" name="textbox" id="Justin" required>
+<!-- above makes a text box that needs required input value or it will not append -->
+        <label for="password"></label>
+        <input type="text" name="password" id="password" minlength="8" maxlength="16">
+<!-- the above makes a text box with a minimum and maxmimum input. if you are above or below the inputs the form will not append -->
+        <p>
+            <input type="email" required>
+        </p>
+<!--the attribute type and id email creates a text box that needs a required email. If you you don't put a "@" the input will not work  -->
+        <button type="submit">Validation Button</button>
+    </form>
+</section>
+<!-- this is the end of my validation section -->
 
 
 
