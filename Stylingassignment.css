@@ -1,21 +1,24 @@
+/* this is making all my H1 headers green */
 h1 {
+
 
     color:green;
 }
-
+/* thisis making all my H2 headers purple  */
 h2{
 
     color:purple;
 }
-
+/* my paragraphs are all going to have orange text with a black background color */
 p{
 
     color:orange;
     background-color:black;
 }
-
+/* the button will have white text, while the actual button is blue */
 button{
 
     color:white;
     background-color:blue;
+
 }
