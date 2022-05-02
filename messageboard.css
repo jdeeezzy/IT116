@@ -1,0 +1,42 @@
+*{
+
+    color:navy;
+    background-color:lightslategray ;
+}
+/* * selector element is a universal style selector,is this case the background is light gray and all the text is navy */
+
+body {
+
+    background-color:lightslategray;
+
+}
+/* the body selector element allows you to make changes to anything in the body as a whole */
+
+button {
+
+    font-size: 30px;
+
+}
+/* the button selector element allows you to change all buttons as a whole */
+
+
+h1,h2 {
+
+    color:yellowgreen;
+
+}
+/* you can select multiple headers / elements at once and change their styling */
+
+#signup {
+
+    background-color:limegreen;
+    color:navy;
+
+}
+/* # links IDs to the CSS */
+
+.tag {
+
+    color:gold;
+
+}
