@@ -22,7 +22,7 @@ button {
 
 h1,h2 {
 
-    color:yellowgreen;
+    color:lime;
 
 }
 /* you can select multiple headers / elements at once and change their styling */
@@ -40,3 +40,19 @@ h1,h2 {
     color:gold;
 
 }
+/* . looks for anything that has a class named "tag" and will change their styling */
+
+.post a{
+
+    color:limegreen;
+
+}
+/* .post a calling all classes with the post "a" tag, allows us to change all classes named post as a whole */
+
+footer a {
+
+    color:limegreen;
+
+}
+/* footer a is calling all the anchor tags  under footer to a certain style  */
+/* if footer > a was used. the > is a descendant selector */
