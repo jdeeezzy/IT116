@@ -1,0 +1,46 @@
+
+/* below Im using the "." selector which will call elements by class allowing me to style with all those in the specific class */
+
+.crimson {
+
+    color:crimson;
+}
+
+.darkgreen {
+
+    color:darkgreen;
+}
+
+.yellow {
+
+    color:goldenrod;
+}
+
+.red {
+
+    color:red;
+}
+
+.orange {
+
+    color:orange;
+}
+
+.nebraska {
+
+    color:darkred;
+}
+
+/* below Im using the "#" selector which will call elements by using their ID */
+
+#agree {
+
+    color:white;
+    background-color:green;
+}
+
+#disagree {
+
+    color:white;
+    background-color:red;
+}
