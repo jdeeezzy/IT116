@@ -71,3 +71,24 @@ button:hover {
     background-color:green;
 }
 /* psuedo-class ":" allow specific elements to be in a special state. In this case we did, buttom hover. When we over any button the color will change */
+
+ .post button:active{
+
+    background-color:darkblue;
+
+ }
+/* nested psuedo-class, we are calling all the nest elements under the post class. allowing us to change the style */
+
+h2::first-letter {
+
+    font-size: 40px;
+}
+/* psuedo-elements, added to a secltor to let you style a specific part of a certain element "::" in this we  change the font size of the first letter in each H2 header*/
+
+p::first-line {
+
+    color:limegreen;
+
+}
+/* :: psudeo element, we are using first line. This will change the first line color of the selected paragraph. the first line will also depend on the margins of the page */
+

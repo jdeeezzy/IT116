@@ -1,0 +1,42 @@
+*{
+
+    background-color: black;
+
+}
+
+header a {
+
+    font-size:40px;
+    color:goldenrod;
+
+}
+
+#schools {
+
+    color:goldenrod;
+
+}
+
+a[href*="Penn State"] {
+
+    color:white;
+
+}
+
+a[href*="Alabama"] {
+
+    color:crimson;
+
+}
+
+a[href*="subject"] {
+
+    color:lightpink;
+
+}
+
+a[href*="hobbies"] {
+
+    color: cyan;
+
+}
