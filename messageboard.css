@@ -56,3 +56,18 @@ footer a {
 }
 /* footer a is calling all the anchor tags  under footer to a certain style  */
 /* if footer > a was used. the > is a descendant selector */
+
+a[href*="google"] {
+
+
+    color: darkgreen;
+}
+/* a is an attribute selector which will call all elements with href"google" and will change the style */
+
+
+button:hover {
+
+
+    background-color:green;
+}
+/* psuedo-class ":" allow specific elements to be in a special state. In this case we did, buttom hover. When we over any button the color will change */
