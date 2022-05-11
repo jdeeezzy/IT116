@@ -27,8 +27,10 @@
             </button>
             <!-- below creating items to go in the collapsing menu. each line item will go into the collapse menu when margins are met.-->
             <!-- each line item will have a link to a specific website -->
+            <!-- all items below are apart of the collapse class -->
             <div class="collapse navbar-collapse" id="navbar1">
-                <ul class="navbar-nav">
+                <!-- d-flex me-auto is push the marigins to the right side of the screen -->
+                <ul class="navbar-nav d-flex me-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="https://www.off---white.com/en-us/">Main Page</a>
                     </li>
@@ -51,10 +53,19 @@
                             <a href="https://www.universityoffashion.com/blog/tag/off-white/" class="dropdown-item">University of Fashion</a>
                         </ul>
                     </li>
-
-
-
                 </ul>
+                <!-- creating a search bar and button. to align with nav items -->
+                <!-- d-flex / m-2 is for the alightment of objects in the container -->
+                <form class="d-flex" action="testing">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+
+
+                </form>
+
+
+
+
             </div>
         </div>
     </nav>
