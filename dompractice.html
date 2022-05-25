@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practice</title>
+</head>
+
+
+<!-- tree has elements and nodes -->
+<!-- the node is ID -->
+<body>
+    <h1 id="test">We're Gonna Change This Heading</h1>
+
+
+
+
+
+    <!-- JS can find elements in a tree a manipulate the elements -->
+    <!-- Remember to put carriage return at the end of each command line -->
+    <script>
+        document.getElementById("test").innerHTML = "Hello World";
+
+        let name = prompt("What is your name?");
+    
+        // document.write will write onto the webpage. log method writes a message to the console
+        document.write(name);
+        console.log(name);
+        alert(name);
+
+    </script>
+</body>
+</html>
