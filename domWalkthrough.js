@@ -116,3 +116,62 @@ for (var i = 0; i < items.length; i++){
     items[i].textContent = 'Anything Works';
     items[i].style.color = 'white';
 }
+
+// recommended to use single quotes
+// created an array, and a for loop to iterate through array
+const myFood = ['Sushi','Steak','Adobo','Lumpia','Fried Chicken'];
+// producing the variable, and the variable index
+for (let i = 0; i < myFood.length; i++){
+    console.log(i, myFood[i]);
+}
+
+
+/////////////////////////////////////////////////
+
+//////////// getElementsByTagName ///////////
+// gives a list of items with the given tag name, in the order of which they appear in the tree
+// the tag name we used below is  "li" list items
+var li = document.getElementsByTagName('li');
+// li is the name of the variable created
+console.log(li);
+// calling list item by line item
+console.log(li[1]);
+// calling by the index, change the element using document function 
+li[1].textContent = "Ribeye";
+// get element by tag name, access the index, and change element
+li[1].style.fontWeight = "bold";
+li[1].style.backgroundColor = "hotpink";
+li[1].style.color= "black";
+
+for (var i = 0; i < li.length; i++){
+    li[i].style.backgroundColor = 'lightgrey';
+    li[i].textContent = 'Changed Food';
+}
+
+/////////////////////////////////////////////////////
+
+
+
+//////////// Query Selector ////////////////
+// returns the FIRST element within the document that matches the specified selector or group of selectors
+
+var header = document.querySelector('#main-header');
+// created variable, using query selector, and being giving the ability to change the specified selector
+// below we changed the header
+header.style.borderBottom = 'solid 8px black';
+
+// returns the FIRST element, the first input in our document is text. Changed the value in the text box
+var input = document.querySelector('input');
+input.value = "Give Justin Food / Drink Ideas";
+
+// double quotes outside, single quote inside
+// specifies the type through attribute
+var submit = document.querySelector("input[type='submit']");
+submit.value = 'Suggest';
+
+var item = document.querySelector('.list-group-item');
+item.style.color = 'goldenrod'
+
+// calling the LAST item / last child is the last item in the dom tree
+var lastItem = document.querySelector('.list-group-item:last-child');
+lastItem.style.color = 'hotpink';
