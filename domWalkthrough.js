@@ -62,7 +62,57 @@ headerTitle.style.color = "white"
 // will return elements which are descendants of the specified root element with the given class name
 // returns an array-like object of all child elements of the given class
 
-var items = document.getElementsByClassName ('list-group');
-// looking for items in the specified "class name"
+var items = document.getElementsByClassName ('list-group-item');
+// looking for items in the specified "class name", passing object to argument parameter
 console.log(items);
 console.log(items[1]);
+// styling property attributes through variable
+items[1].textContent = 'Salmon Nigiri';
+items[1].style.backgroundColor = 'pink';
+items[1].style.fontWeight = 'bold';
+items[1].style.color = 'red';
+
+items[0].textContent = 'Jasmine Rice';
+items[0].style.backgroundColor = 'black';
+items[0].style.fontWeight = 'bold';
+items[0].style.color = 'white';
+
+items[2].textContent = 'Medium-Rare Fatty Ribeye';
+items[2].style.backgroundColor = 'red';
+items[2].style.fontWeight = 'bold';
+items[2].style.color = 'black';
+
+/////////////// getElementsByClassName //////////////////
+
+//////////////////// For Loop ///////////////
+// for every item in the particular index list, the item will do something
+// two-parts: header specifying the iteration / body which is executed once per iteration
+// header has a loop counter / variable, allows the body to know which iteration is being executed
+// variable > length > increment
+
+// this is a counter, that loops until 10
+// starts at index 1, arrays start at 0
+for (let i = 1; i <=10; i++) {
+
+    console.log(i);
+
+} 
+
+// 0 > 2 > 4 > 6
+// counting to 20 by 2, using i +=2 "i = "number" determines starting point"
+for (let i = 0; i <=20; i +=2) {
+    console.log(i)
+}
+
+// descending order, decrement 100 > 98 > 96
+for (let i = 100; i >= 0; i -=2){
+    console.log(i)
+}
+
+// incrementing through the for loop in the header
+// calling object variable and changing items if length is met
+for (var i = 0; i < items.length; i++){
+    items[i].style.backgroundColor = 'black';
+    items[i].textContent = 'Anything Works';
+    items[i].style.color = 'white';
+}
