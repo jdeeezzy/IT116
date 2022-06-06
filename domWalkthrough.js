@@ -193,7 +193,7 @@ titles[0].textContent = 'Suggest Some Food'
  var even = document.querySelectorAll('li:nth-child(even)');
 
 //  for loop iterating through both created variables 
-
+// manipulating odd / even list items for created variable of 'i'
 for (var i = 0; i < odd.length; i++) {
     odd[i].style.backgroundColor = 'red';
     even[i].style.backgroundColor = 'black';
