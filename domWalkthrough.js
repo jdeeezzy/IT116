@@ -172,6 +172,33 @@ submit.value = 'Suggest';
 var item = document.querySelector('.list-group-item');
 item.style.color = 'goldenrod'
 
-// calling the LAST item / last child is the last item in the dom tree
+// calling the LAST item / last child is the last item in the particular list / tree
 var lastItem = document.querySelector('.list-group-item:last-child');
 lastItem.style.color = 'hotpink';
+
+// querySelectorAll will prompt a node list with 'titles'
+// created variable named titles
+// given the ability to change all nodes with the class name title, in this case the H2
+var titles = document.querySelectorAll('.title');
+console.log(titles);
+titles[0].textContent = 'Suggest Some Food'
+
+// inquiring about the odd / even numbers in a list / tree
+// matches every element 'n'th child of the parent
+// n= number / keyword (odd,even) / formula (a+b)
+// this will prompt all list item, the first item is the parent node. nth will start at the parent node 
+// 1 = parent 2,3,4,5 etc = child nodes 
+// odd will prompt all odd number list items 
+ var odd = document.querySelectorAll('li:nth-child(odd)');
+ var even = document.querySelectorAll('li:nth-child(even)');
+
+//  for loop iterating through both created variables 
+
+for (var i = 0; i < odd.length; i++) {
+    odd[i].style.backgroundColor = 'red';
+    even[i].style.backgroundColor = 'black';
+    even[i].style.color = 'white';
+    odd[i].style.color = 'white';
+}
+
+
