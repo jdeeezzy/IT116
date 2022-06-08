@@ -30,3 +30,48 @@ if (nameOfCar === 'Honda') {
 
     console.log('I DRIVE A F***** MERCEDES');
 }
+
+///////////////////////////////////////////////////////
+// < > operators 
+const age = prompt("What's Your Age?")
+
+if (age < 5) {
+    console.log("You are not old enough to drive! Ask your mom to drive you!")
+}else if (age < 10){
+    console.log("Better ask your friends too!")
+}else if ( age >= 16){
+    console.log("YAY You can drive now! Go get your license!")
+}
+
+// ELSE - ALL Conditions in the logic have failed 
+else {
+    console.log("Last Resort If All Conditions Have Failed")
+}
+
+/////////////////////////////////////////
+
+// Swtich Statements 
+
+const expr = 'Watermelons';
+
+switch (expr){
+
+    case 'Oranges':
+        console.log('Oranges are $1 pound');
+        break; 
+    case 'Mangoes':
+        console.log('Hello Mango!');
+        break;
+    case 'Watermelons':
+        console.log('Hello Watermelons!');
+        break;
+    default:
+        console.log('Sorry We are out of your asked item');    
+
+
+
+
+
+
+
+}
