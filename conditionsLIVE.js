@@ -51,7 +51,12 @@ else {
 /////////////////////////////////////////
 
 // Swtich Statements 
-
+// each switch statement will have a case compared to 
+// writing multiple else ifs
+// displays whichever conditions are met
+// loops keep going until conditions are met 
+// once met, whatever code is in that condition will be executed
+// everything else is there just in case the variable meets those other conditions
 const expr = 'Watermelons';
 
 switch (expr){
@@ -68,10 +73,58 @@ switch (expr){
     default:
         console.log('Sorry We are out of your asked item');    
 
+}
 
+///////////////////////////////////////////
 
+const password = prompt('Please Enter in a New Password');
 
+if (password.length >= 8) {
 
+    // this is a nested condition. within the main condition if the criteria is met 
+    // strict operator ===
+    if (password.indexOf(' ') === -1) {
+        console.log('Valid Password')
+    }else {
+        console.log("Password Can't Have Spaces")
+    }
 
+} else {
+    console.log("Password is Too Short")    
+}
+
+/////////////////////
+//  Functions
+// call the function in order to run
+
+function singSong(){
+
+    console.log('Say');
+    console.log('My');
+    console.log('Name');
+}
+
+singSong()
+
+function greet(firstName) {
+    // template literal
+    // string literal 
+    console.log(`Hey There, ${firstName}`)
+}
+
+greet('Hello Justin!')
+
+function greet1(firstName,lastName){
+    // referencing the string index
+    // [0]. will prompt first initial of last name
+    console.log(`Hey There, ${firstName} ${lastName[0]}.`)
 
 }
+
+greet1('Mariah','Carey')
+
+// once function is declared, call function for literals to run
+
+
+
+//////////////////
